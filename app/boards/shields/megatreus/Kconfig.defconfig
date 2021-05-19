@@ -1,0 +1,25 @@
+# Copyright (c) 2020 Pete Johanson, Richard Jones
+# SPDX-License-Identifier: MIT
+
+if SHIELD_MEGATREUS
+
+config ZMK_KEYBOARD_NAME
+    default "Megatreus"
+
+config ZMK_BLE
+    default y
+
+config ZMK_USB
+    default y
+
+#config ZMK_BATTERY_VOLTAGE_DIVIDER
+#    default y
+
+#config ZMK_KSCAN_MATRIX_POLLING
+#    default y
+
+config SPI
+    default n
+
+endif
+

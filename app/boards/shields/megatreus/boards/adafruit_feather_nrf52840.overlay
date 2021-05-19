@@ -1,0 +1,14 @@
+&uart0 {
+    tx-pin = <7>;
+    rx-pin = <8>;
+};
+
+// / {
+//     vbatt {
+//         compatible = "zmk,battery-voltage-divider";
+//         label = "BATTERY";
+//         io-channels = <&adc 6>;
+//         output-ohms = <150000>;
+//         full-ohms = <(150000 + 150000)>;
+//     };
+// };
