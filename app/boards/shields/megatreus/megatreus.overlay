@@ -30,8 +30,6 @@
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
 
-        debounce-press-ms = <10>;
-        debounce-release-ms = <10>;
         diode-direction = "col2row";
         row-gpios
             = <&feather_header 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>

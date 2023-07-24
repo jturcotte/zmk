@@ -15,8 +15,10 @@ config ZMK_USB
 #config ZMK_BATTERY_VOLTAGE_DIVIDER
 #    default y
 
-#config ZMK_KSCAN_MATRIX_POLLING
-#    default y
+config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
+    default 20
+config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
+    default 20
 
 config SPI
     default n
