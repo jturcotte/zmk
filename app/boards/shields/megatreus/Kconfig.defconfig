@@ -1,0 +1,44 @@
+# Copyright (c) 2020 Pete Johanson, Richard Jones
+# SPDX-License-Identifier: MIT
+
+if SHIELD_MEGATREUS
+
+config ZMK_KEYBOARD_NAME
+    default "Megatreus"
+
+config ZMK_BLE
+    default y
+
+config ZMK_USB
+    default y
+
+
+#config ZMK_BATTERY_VOLTAGE_DIVIDER
+#    default y
+
+config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
+    default 20
+config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
+    default 20
+
+config SPI
+    default n
+
+endif
+
+
+if USB
+
+config USB_NRFX
+    default y
+
+config USB_DEVICE_STACK
+    default y
+
+endif # USB
+
+config BT_CTLR
+    default BT
+
+config ZMK_BATTERY_VOLTAGE_DIVIDER
+    default y
